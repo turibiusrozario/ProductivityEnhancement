@@ -1,4 +1,4 @@
-﻿#NoEnv
+#NoEnv
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
@@ -9,13 +9,13 @@ SetWorkingDir %A_ScriptDir%
 ; > denotes right key
 ; < denotes left key
 
-/*
-^#r::Reload
-Sleep 1000
-MsgBox, 4,, The script could not be reloaded. Would you like to open it for editing?
-IfMsgBox, Yes, Edit
-return
-*/
+::r.k::
+    Reload
+    Sleep 1000
+    MsgBox, 4,, The script could not be reloaded. Would you like to open it for editing?
+    IfMsgBox, Yes, Edit
+    Return
+    ; The above reload script is actually not mine
 
 <^Space::
 Send {End}
@@ -41,11 +41,11 @@ Return
 Send {Down}
 Return
 
-<!c::
+<!n::
 Send {Up}
 Return
 
-<!n::
+<!s::
 Send {Right}
 Return
 
@@ -53,7 +53,7 @@ Return
 Send +{Left}
 Return
 
-<!+n::
+<!+s::
 Send +{Right}
 Return
 
@@ -61,7 +61,7 @@ Return
 Send +{Down}
 Return
 
-<!+c::
+<!+n::
 Send +{Up}
 Return
 
@@ -73,11 +73,11 @@ Return
 Send ^{Down}
 Return
 
-<!<^c::
+<!<^n::
 Send ^{Up}
 Return
 
-<!<^n::
+<!<^s::
 Send ^{Right}
 Return
 
@@ -85,7 +85,7 @@ Return
 Send ^+{Left}
 Return
 
-<!<^+n::
+<!<^+s::
 Send ^+{Right}
 Return
 
@@ -93,6 +93,6 @@ Return
 Send ^+{Down}
 Return
 
-<!<^+c::
+<!<^+n::
 Send ^+{Up}
 Return
