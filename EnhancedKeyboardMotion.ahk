@@ -12,7 +12,7 @@ SetWorkingDir %A_ScriptDir%
 ::r.k::
     Reload
     Sleep 1000
-    MsgBox, 4,, The script could not be reloaded. Would you like to open it for editing?
+    MsgBox, 4,, EnhancedKeyboardMotion.ahk could not be reloaded. Edit it?
     IfMsgBox, Yes, Edit
     Return
     ; The above reload script is actually not mine
