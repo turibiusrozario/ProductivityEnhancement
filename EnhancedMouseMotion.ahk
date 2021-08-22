@@ -6,13 +6,13 @@ CoordMode, Mouse, Screen
 D := 20 ; Distance (pixels) to move
 J := 100 ; 'Jumps' (pixels) to move
 
-/*
-^#r::Reload
-Sleep 1000
-MsgBox, 4,, The script could not be reloaded. Would you like to open it for editing?
-IfMsgBox, Yes, Edit
-return
-*/
+::r.m::
+    Reload
+    Sleep 1000
+    MsgBox, 4,, EnhancedMouseMotion.ahk could not be reloaded. Edit?
+    IfMsgBox, Yes, Edit
+    Return
+    ; The above reload script isn't mine
 
 ; Explanation:
 ; + is shift
@@ -68,4 +68,3 @@ Return
 <^>!+o::
 MouseMove, 0, -J,, R
 Return
-
