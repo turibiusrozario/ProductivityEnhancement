@@ -4,11 +4,9 @@ SendMode Input
 SetWorkingDir %A_ScriptDir%
 
 ::r.n::
-    Sleep 1000
-    MsgBox, 4,, Numpad.ahk could not be reloaded. Edit?
-    IfMsgBox, Yes, Edit
+    Reload
     Return
-
+    
 #If GetKeyState("ScrollLock","T")
 b::Send, {Numpad0}
 m::Send, {Numpad1}
