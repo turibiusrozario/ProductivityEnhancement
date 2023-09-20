@@ -82,3 +82,17 @@ to be there anyway. Hence, you can make `F9` key be your caps lock.
 
 To do this, install [SharpKeys](https://apps.microsoft.com/store/detail/sharpkeys/XPFFCG7M673D4F) or via [GitHub](https://github.com/randyrants/sharpkeys/releases).
 Use it to change CapsLock into Enter, and Enter into Scroll Lock. The `CapsLock.ahk` converts `F9` into the Scroll Lock.
+
+## Snippets
+
+Wouldn't it be nice if you could type `@today` and automatically have the current date pasted?
+Or have a short hotstring, such as `SIGN` to automatically insert your email signature?
+The `Snippets4Others.ahk` includes a few introductory snippets and allows you to add your own snippets.
+To get started, download the AutoHotkey file from the main branch (above).
+
+- To restart the snippet script (e.g. after an edit), type `r.s` (followed by space, for example)
+- To add your own hotstring on the fly, press `Win + S`; add your snippet into the window
+
+Make sure to download AutoHotkey and place the above `.ahk` script in your startup folder.
+For first time use, double click on the file to run it.
+View "Installation and Setup" under "Keyboard Navigation Enhancement" for details on setup.
